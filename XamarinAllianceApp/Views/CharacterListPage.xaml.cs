@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using XamarinAllianceApp.Controllers;
+using XamarinAllianceApp.Models;
 
 namespace XamarinAllianceApp.Views
 {
@@ -14,6 +15,18 @@ namespace XamarinAllianceApp.Views
             InitializeComponent();
 
             service = new CharacterService();
+        }
+
+        async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
+        {
+            var item = args.SelectedItem as Character;
+            if (item == null)
+            {
+                return;
+            }
+            await Navigation.PushAsync(new CharacterDetailPage(item));
+
+            characterList.SelectedItem= null;
         }
 
         protected override async void OnAppearing()

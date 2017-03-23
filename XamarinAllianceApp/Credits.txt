@@ -1,1 +1,1 @@
-﻿All data in this app is courtesy of http://www.starwars.com.
+﻿All data in this app is courtesy of https://playoverwatch.com/en-us/.
