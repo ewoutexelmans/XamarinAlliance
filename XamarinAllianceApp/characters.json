@@ -1,11 +1,12 @@
 ﻿[
   {
     "id": 1,
-    "role": "Offense",
+    "height": 199.0,
     "gender": "Male",
-    "databankUrl": "https://playoverwatch.com/en-us/heroes/soldier-76/",
-    "biography": "Armed with cutting-edge weaponry, including an experimental pulse rifle that’s capable of firing spirals of high-powered Helix Rockets, Soldier: 76 has the speed and support know-how of a highly trained warrior.",
-    "name": "Soldier: 76",
+    "databankUrl": "http://www.starwars.com/databank/bail-organa",
+    "imageUrl": "https://lumiere-a.akamaihd.net/v1/images/Bail_Organa_e28bc2fc.jpeg?region=192%2C0%2C1561%2C878&width=1200",
+    "biography": "Bail Organa, a member of Alderaan's royal family and the planet's representative to the Republic Senate, earned respect on Coruscant for his honesty and his commitment to justice. Prior to the Clone Wars, Bail served alongside Senator Padmé Amidala as a member of Chancellor Palpatine's Loyalist Committee. The two became close friends, and recruited like-minded allies to prevent Palpatine's alarming grabs for power. At the end of the war, Bail Organa adopted Padmé's daughter Leia and raised her as an Alderaanian princess. While representing Alderaan in the Imperial Senate, he worked secretly with allies such as Mon Mothma and Ahsoka Tano to assist rebel cells scattered across the galaxy, working towards the day that a unified Rebellion could emerge. Bail died when the Death Star destroyed his homeworld.",
+    "name": "Bail Organa",
     "appearances": [
       {
         "title": "Star Wars: Episode II Attack of the Clones",
@@ -33,11 +34,12 @@
   },
   {
     "id": 2,
-    "role": "Offense",
-    "gender": "Male",
-    "databankUrl": "https://playoverwatch.com/en-us/heroes/reaper/",
-    "biography": "Hellfire Shotguns, the ghostly ability to become immune to damage, and the power to step between shadows make Reaper one of the deadliest beings on Earth.",
-    "name": "Reaper",
+    "height": 150.0,
+    "gender": "Female",
+    "databankUrl": "http://www.starwars.com/databank/mon-mothma",
+    "imageUrl": "https://lumiere-a.akamaihd.net/v1/images/databank_monmothma_01_169_b62808e8.jpeg?region=0%2C0%2C1560%2C878&width=1200",
+    "biography": "A leader of the Galactic Senate's Loyalist faction, Mon Mothma opposed Supreme Chancellor Palpatine's policies during the final days of the Repulic. Working in secret, she helped found the Rebel Alliance, and served as its civilian leader during the long struggle against the Empire.",
+    "name": "Mon Mothma",
     "appearances": [
       {
         "title": "Star Wars: Episode III Revenge of the Sith",
@@ -55,15 +57,16 @@
         "id": 5
       }
     ],
-    "weapons": [ ]
+    "weapons": []
   },
   {
     "id": 3,
-    "role": "Defense",
-    "gender": "Male",
-    "databankUrl": "https://playoverwatch.com/en-us/heroes/torbjorn/",
-    "biography": "Torbjörn’s extensive arsenal includes a rivet gun and hammer, as well as a personal forge that he can use to build upgradeable turrets and dole out protective armor packs.",
-    "name": "Torbjörn",
+    "height": 165.0,
+    "gender": "Female",
+    "databankUrl": "http://www.starwars.com/databank/padme-amidala",
+    "imageUrl": "https://lumiere-a.akamaihd.net/v1/images/Padme-Amidala_05d50c8a.jpeg?region=0%2C0%2C1536%2C864&width=1200",
+    "biography": "Padmé Amidala was a courageous, hopeful leader, serving as Queen and then Senator of Naboo -- and was also handy with a blaster. Despite her ideals and all she did for the cause of peace, her secret, forbidden marriage to Jedi Anakin Skywalker would prove to have dire consequences for the galaxy.",
+    "name": "Padmé Amidala",
     "appearances": [
       {
         "title": "Star Wars: Episode III Revenge of the Sith",
@@ -86,42 +89,16 @@
         "id": 2
       }
     ],
-    "weapons": [ ]
+    "weapons": []
   },
   {
     "id": 4,
-    "role": "Tank",
-    "gender": "Male",
-    "databankUrl": "https://playoverwatch.com/en-us/heroes/reinhardt/",
-    "biography": "Clad in powered armor and swinging his hammer, Reinhardt leads a rocket-propelled charge across the battleground and defends his squadmates with a massive energy barrier.",
-    "name": "Reinhardt",
-    "appearances": [
-      {
-        "title": "Star Wars: The Clone Wars",
-        "description": "Star Wars: The Clone Wars follows the Republic’s clone army in their struggle against Count Dooku’s Separatist forces, and features fan-favorite characters like Anakin Skywalker, Obi-Wan Kenobi, Ahsoka Tano, and Darth Maul.",
-        "id": 2
-      }
-    ],
-    "weapons": [
-      {
-        "name": "Lightsaber",
-        "description": "The lightsaber is the weapon of a Jedi, an elegant weapon of a more civilized age. It can be used to cut through blast doors or enemies alike. Using the Force, a Jedi can predict and deflect incoming blaster bolts, and reflect them.",
-        "id": 2
-      },
-      {
-        "name": "Ahsoka's lightsabers",
-        "description": "As a Padawan, Ahsoka Tano used a green-bladed lightsaber, often wielding it in a non-standard reverse grip. Under the tutelage of Anakin Skywalker, Ahsoka became a skilled duelist, and built a second green-bladed lightsaber with a shorter, shoto-style blade. She used this shorter-bladed lightsaber to complement her primary weapon. During her time with the rebellion, Ahsoka used a pair of new lightsabers with white plasma blades.",
-        "id": 3
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "role": "Support",
+    "height": 170.0,
     "gender": "Female",
-    "databankUrl": "https://playoverwatch.com/en-us/heroes/ana/",
-    "biography": "Ana’s versatile arsenal allows her to affect heroes all over the battlefield. Her Biotic Rifle rounds and Biotic Grenades heal allies and damage or impair enemies; her sidearm tranquilizes key targets, and Nano Boost gives one of her comrades a considerable increase in power.",
-    "name": "Ana",
+    "databankUrl": "http://www.starwars.com/databank/ahsoka-tano",
+    "imageUrl": "https://lumiere-a.akamaihd.net/v1/images/Ahsoka-Tano_aa51fe5c.jpeg?region=125%2C0%2C1067%2C601",
+    "biography": "Ahsoka Tano, a Togruta female, was the Padawan learner to Anakin Skywalker and a hero of the Clone Wars. Alongside Anakin, she grew from headstrong student into a mature leader. But her destiny laid along a different path than the Jedi.",
+    "name": "Ahsoka Tano",
     "appearances": [
       {
         "title": "Star Wars: The Clone Wars",

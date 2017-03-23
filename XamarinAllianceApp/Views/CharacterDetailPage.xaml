@@ -9,13 +9,14 @@
                 <Label Text="Biography:" FontAttributes="Bold" />
                 <Label Text="{Binding Item.Biography}"  />
             </StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Label Text="Role: " FontAttributes="Bold" />
-                <Label Text="{Binding Item.Role}" />
-            </StackLayout>
+
             <StackLayout Orientation="Horizontal">
                 <Label Text="Gender: " FontAttributes="Bold" />
                 <Label Text="{Binding Item.Gender}" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Height: " FontAttributes="Bold" />
+                <Label Text="{Binding Item.Height}" />
             </StackLayout>
         </StackLayout>
     </ScrollView>

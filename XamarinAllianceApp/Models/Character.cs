@@ -10,7 +10,7 @@ namespace XamarinAllianceApp.Models
         string name;
         string biography;
         string gender;
-        string role;
+        float height;
         string databankUrl;
         ICollection<Weapon> weapons;
         ICollection<Movie> appearances;
@@ -43,11 +43,11 @@ namespace XamarinAllianceApp.Models
             set { biography = value; }
         }
 
-        [JsonProperty(PropertyName = "role")]
-        public string Role
+        [JsonProperty(PropertyName = "height")]
+        public float Height
         {
-            get { return role; }
-            set { role = value; }
+            get { return height; }
+            set { height = value; }
         }
 
         [JsonProperty(PropertyName = "databankUrl")]
