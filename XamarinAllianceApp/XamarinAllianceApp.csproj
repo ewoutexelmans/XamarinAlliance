@@ -81,7 +81,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="characters.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.WindowsAzure.MobileServices;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -18,7 +19,7 @@ namespace XamarinAllianceApp.Controllers
         /// <returns>ObservableCollection of Character objects</returns>
         public async Task<ObservableCollection<Character>> GetCharactersAsync()
         {
-            var characters = await ReadCharactersFromFile();
+            var characters = await ReadCharactersFromServer();
             return new ObservableCollection<Character>(characters);
         }
 
@@ -26,7 +27,7 @@ namespace XamarinAllianceApp.Controllers
         /// Get the list of characters from an embedded JSON file, including their child entities.
         /// </summary>
         /// <returns>Array of Character objects</returns>
-        private async Task<Character[]> ReadCharactersFromFile()
+        /**private async Task<Character[]> ReadCharactersFromFile()
         {
             var assembly = typeof(CharacterService).GetTypeInfo().Assembly;
             Stream stream = assembly.GetManifestResourceStream(Constants.CharactersFilename);
@@ -39,6 +40,16 @@ namespace XamarinAllianceApp.Controllers
 
             var characters = JsonConvert.DeserializeObject<Character[]>(text);
             return characters;
+        }*/
+        private async Task<List<Character>> ReadCharactersFromServer()
+        {
+            string mobileServiceClientUrl = "http://xamarinalliancebackend.azurewebsites.net";
+            MobileServiceClient Client = new MobileServiceClient(mobileServiceClientUrl);
+
+            IMobileServiceTable<Character> CharacterTable = Client.GetTable<Character>();
+            var characters = await CharacterTable.ToListAsync();
+            return characters;
+
         }
     }
 }
