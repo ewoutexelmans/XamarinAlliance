@@ -13,6 +13,7 @@ namespace XamarinAllianceApp.Controllers
 {
     public class CharacterService
     {
+
         /// <summary>
         /// Get the list of characters
         /// </summary>
@@ -43,10 +44,9 @@ namespace XamarinAllianceApp.Controllers
         }*/
         private async Task<List<Character>> ReadCharactersFromServer()
         {
-            string mobileServiceClientUrl = "http://xamarinalliancebackend.azurewebsites.net";
-            MobileServiceClient Client = new MobileServiceClient(mobileServiceClientUrl);
 
-            IMobileServiceTable<Character> CharacterTable = Client.GetTable<Character>();
+            
+            IMobileServiceTable<Character> CharacterTable = App.Client.GetTable<Character>();
             var characters = await CharacterTable.ToListAsync();
             return characters;
 

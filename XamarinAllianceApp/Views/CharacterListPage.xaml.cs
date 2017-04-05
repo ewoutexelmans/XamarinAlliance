@@ -9,6 +9,7 @@ namespace XamarinAllianceApp.Views
     public partial class CharacterListPage : ContentPage
     {
         private CharacterService service;
+        private bool authenticated = false;
 
         public CharacterListPage()
         {
@@ -26,15 +27,30 @@ namespace XamarinAllianceApp.Views
             }
             await Navigation.PushAsync(new CharacterDetailPage(item));
 
-            characterList.SelectedItem= null;
+            characterList.SelectedItem = null;
         }
 
         protected override async void OnAppearing()
         {
             base.OnAppearing();
+            if (authenticated == true)
+            {
+                // Set syncItems to true in order to synchronize the data on startup when running in offline mode
+                await RefreshItems(true);
+                //Hide the Sign-in button
+                loginButton.IsVisible = false;
+                
+                
+            }
+        }
+        async void loginButton_Clicked(object sender, EventArgs e)
+        {
+            if (App.Authenticator != null)
+                authenticated = await App.Authenticator.Authenticate();
 
-            // Set syncItems to true in order to synchronize the data on startup when running in offline mode
-            await RefreshItems(true);
+            // Set syncItems to true to synchronize the data on startup when offline is enabled.
+            if (authenticated == true)
+                await RefreshItems(true);
         }
 
         // http://developer.xamarin.com/guides/cross-platform/xamarin-forms/working-with/listview/#pulltorefresh
